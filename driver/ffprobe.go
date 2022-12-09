@@ -1,5 +1,7 @@
 package driver
 
+import "fmt"
+
 type FFprobe struct {
 	logPath         string
 	execLibraryPath string
@@ -26,4 +28,7 @@ func (ffprobe *FFprobe) Create(configtion map[string]string) FFprobe {
 	}
 	return *ffprobe
 
+}
+func (FFprobe *FFprobe) Exec(command string) {
+	fmt.Println("")
 }

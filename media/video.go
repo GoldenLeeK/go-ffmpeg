@@ -1,6 +1,9 @@
 package media
 
-type video struct {
-	filepath string
+type Video struct {
+	Path string
 }
 
+func (v *Video) Filepath() string {
+	return v.Path
+}

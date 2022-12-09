@@ -1,8 +1,4 @@
-package main
-
-import (
-	"github.com/GoldenLeeK/go-ffmpeg/driver"
-)
+package driver
 
 type Config struct {
 	execLibraryPath string
@@ -11,7 +7,7 @@ type Config struct {
 	timeout         string
 }
 
-func (config *Config) NewDrvier(drvier driver.Driverable) driver.Driverable {
+func (config *Config) NewDrvier(drvier Driverable) Driverable {
 	return drvier.Create(map[string]string{
 		"exec_library_path": config.execLibraryPath,
 		"log_path":          config.logPath,

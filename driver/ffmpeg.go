@@ -27,3 +27,7 @@ func (ffmpeg *FFmpeg) Create(configtion map[string]string) Driverable {
 	return ffmpeg
 
 }
+
+func (ffmpeg *FFmpeg) Exec(command string) {
+
+}

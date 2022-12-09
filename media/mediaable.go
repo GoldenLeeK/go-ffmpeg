@@ -1,4 +1,5 @@
 package media
 
-type mediaable interface {
+type Mediaable interface {
+	Filepath() string
 }
